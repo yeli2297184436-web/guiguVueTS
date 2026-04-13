@@ -1,0 +1,63 @@
+@use './reset.scss';
+
+//滚动条外观设置
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $base-menu-background;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+}
+
+// Element Plus 菜单图标大小
+.el-menu .el-icon {
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 20px !important;
+}
+
+// 确保子菜单项文字可见
+.el-menu .el-menu-item span {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+:root {
+  --el-menu-base-level-padding: 12px !important;
+}
+
+// 菜单折叠时隐藏标题文字和箭头
+// .el-menu--collapse .el-sub-menu__title span {
+//   display: none !important;
+// }
+
+// .el-menu--collapse .el-sub-menu__icon-arrow {
+//   display: none !important;
+// }
+
+// 弹出子菜单样式
+// .el-menu--popup,
+// .el-menu--popup-bottom-start {
+//   min-width: 180px !important;
+//   background-color: #001529 !important;
+
+//   .el-menu-item {
+//     background-color: #001529 !important;
+//     color: #959ea6 !important;
+
+//     &:hover {
+//       background-color: #000c17 !important;
+//     }
+
+//     &.is-active {
+//       color: #fff !important;
+//       background-color: #1890ff !important;
+//     }
+//   }
+// }
