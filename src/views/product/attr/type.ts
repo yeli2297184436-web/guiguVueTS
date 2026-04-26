@@ -19,9 +19,27 @@ export interface CategoryResponseData extends ResponseData{
   ok:boolean
 }
 
+//属性值对象的ts类型
 export interface AttrValue {
-  attrId: number,
-  id: number,
-  valueName:string,
+  id?: number
+  valueName: string
+  attrId?: number
+  flag?: boolean
+}
+
+export type AttrValueList = AttrValue[]
+
+export interface Attr {
+  id?: number
+  attrName: string
+  categoryId: number | string
+  categoryLevel: number
+  attrValueList: AttrValueList
+}
+
+export type AttrList = Attr[]
+
+export interface AttrResponseData extends ResponseData {
+  data: Attr[]
 }
 

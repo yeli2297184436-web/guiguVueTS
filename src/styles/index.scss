@@ -4,6 +4,9 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
+:deep .el-select {
+  width: 250px;
+}
 
 ::-webkit-scrollbar-track {
   background: $base-menu-background;

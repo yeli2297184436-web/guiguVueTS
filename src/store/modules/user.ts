@@ -18,7 +18,8 @@ let useUserStore = defineStore('User',{
       token:GET_TOKEN(),//用户唯一标识
       menuRoutes:constantRoute,//仓库存储生成菜单需要数组（路由）
       username:'',
-      avatar:''
+      avatar:'',
+      buttons: [],
     }
   },
   //异步 逻辑的地方
