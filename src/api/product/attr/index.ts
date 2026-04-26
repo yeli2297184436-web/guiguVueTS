@@ -1,5 +1,9 @@
 import request from '@/utils/request'
+<<<<<<< HEAD
 import type { ResponseData,AttrResponseData,Attr,CategoryObj,CategoryResponseData } from './type'
+=======
+import type { ResponseData,CategoryObj,CategoryResponseData } from './type'
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 import useCategoryState from '@/store/modules/category'
 
 enum API {
@@ -29,6 +33,7 @@ export const GET_Category_three = (categoryId:number) =>
   )
 
 export const GET_ATTR_INFO = (categoryIdOne:number,categoryIdTwo:number,categoryIdThree:number) =>
+<<<<<<< HEAD
   request.get<any, AttrResponseData>(
     API.GET_ATTR_INFO + `/${categoryIdOne}/${categoryIdTwo}/${categoryIdThree}`,  // 拼接API路径，传入id参数获取对应的三级分类数据
   )
@@ -48,3 +53,8 @@ export const saveOrUpdateAttr = (data:Attr) =>
 
 export const DELETE_ATTR = (attrId: number) =>
   request.delete<any, any>(API.DELETE_ATTR + attrId)
+=======
+  request.get<any, any>(
+    API.GET_ATTR_INFO + `/${categoryIdOne}/${categoryIdTwo}/${categoryIdThree}`,  // 拼接API路径，传入id参数获取对应的三级分类数据
+  )
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import {
@@ -168,4 +169,18 @@ const removeSku = async (id: number) => {
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
 }
+=======
+<template>
+  <div>
+    sku
+  </div>
+</template>
+
+<script setup lang="ts" name="">
+  
+</script>
+
+<style scoped lang="">
+  
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 </style>

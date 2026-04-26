@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup lang="ts">
 import { ref, onMounted, reactive } from 'vue'
 import {
@@ -112,3 +113,18 @@ const removeMenu = async (id: number) => {
   </el-dialog>
 </template>
 <style lang="scss" scoped></style>
+=======
+<template>
+  <div>
+    <h1>菜单管理</h1>
+  </div>
+</template>
+
+<script setup lang="ts" name="">
+  
+</script>
+
+<style scoped lang="">
+  
+</style>
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972

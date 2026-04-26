@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <el-button size="small" icon="Refresh" circle @click="updateRefsh">
   </el-button>
   <el-button size="small" icon="FullScreen" circle @click="fullScreen">
@@ -6,6 +7,32 @@
   <el-button size="small" icon="Setting" circle>
   </el-button>
   <img src="@/assets/images/me.jpg" alt="">
+=======
+  <el-button
+    size="small"
+    icon="Refresh"
+    circle
+    @click="updateRefsh"
+  >
+  </el-button>
+  <el-button
+    size="small"
+    icon="FullScreen"
+    circle
+    @click="fullScreen"
+  >
+  </el-button>
+  <el-button
+    size="small"
+    icon="Setting"
+    circle
+  >
+  </el-button>
+  <img
+    :src="userStore.avatar"
+    alt=""
+  >
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
   <!-- 下拉菜单 -->
   <el-dropdown>
     <span class="el-dropdown-link">
@@ -28,7 +55,11 @@ import useLayoutSettingStore from '@/store/modules/setting'
 //获取用户相关小仓库
 import useUserStore from '@/store/modules/user'
 // 获取路由器
+<<<<<<< HEAD
 import { useRouter, useRoute } from 'vue-router'
+=======
+import {useRouter,useRoute} from 'vue-router'
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 let $router = useRouter()
 //获取路由对象
 let $route = useRoute()
@@ -43,15 +74,23 @@ const fullScreen = () => {
   //DOM对象的一个属性，可以用来判断当前是不是全屏模式[全屏：true，不是全屏：false]
   let full = document.fullscreenElement
   //切换为全屏模式
+<<<<<<< HEAD
   if (!full) {
     //利用文档根节点的方法requestFullscreen实现全屏模式
     document.documentElement.requestFullscreen()
   } else {
+=======
+  if(!full){
+    //利用文档根节点的方法requestFullscreen实现全屏模式
+    document.documentElement.requestFullscreen()
+  }else{
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
     // 退出全屏模式
     document.exitFullscreen()
   }
 }
 //退出登录
+<<<<<<< HEAD
 const logout = async () => {
   // 第一件事：需要向服务器发请求[退出登录接口]
   // 第二件事：仓库当中关于用户相关的数据清空[token.username,avatar]
@@ -59,6 +98,15 @@ const logout = async () => {
   await userStore.userLogout()
   //跳转到登录页面
   $router.push({ path: '/login', query: { redirect: $route.path } })
+=======
+const logout = async ()=>{
+  // 第一件事：需要向服务器发请求[退出登录接口]
+  // 第二件事：仓库当中关于用户相关的数据清空[token.username,avatar]
+  // 第三件事：跳转到登录页面
+  await  userStore.userLogout()
+  //跳转到登录页面
+  $router.push({path:'/login',query:{redirect:$route.path}})
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 }
 </script>
 
@@ -68,7 +116,11 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
 <style scoped>
+=======
+<style scoped >
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 img {
   border-radius: 50%;
   width: 24px;

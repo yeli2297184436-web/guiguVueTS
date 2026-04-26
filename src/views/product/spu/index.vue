@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup lang="ts">
 import { ref, watch, onBeforeUnmount } from 'vue'
 import useCategoryStore from '@/store/modules/category'
@@ -171,4 +172,18 @@ onBeforeUnmount(() => {
 :deep .el-select {
   width: 250px;
 }
+=======
+<template>
+  <div>
+    spu
+  </div>
+</template>
+
+<script setup lang="ts" name="">
+  
+</script>
+
+<style scoped lang="">
+  
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 </style>

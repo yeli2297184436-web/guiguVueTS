@@ -14,6 +14,7 @@ export interface CategoryObj {
 
 export interface CategoryResponseData extends ResponseData {
   data:CategoryObj[]
+<<<<<<< HEAD
 }
 
 export interface AttrValue {
@@ -37,4 +38,6 @@ export type AttrList = Attr[]
 
 export interface AttrResponseData extends ResponseData {
   data: Attr[]
+=======
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 }

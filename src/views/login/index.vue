@@ -5,7 +5,11 @@
       <el-col :span="12" :xs="24">
         <el-form class="login_form" ref="loginForms" :model="loginForm" :rules="rules">
           <h1>hello</h1>
+<<<<<<< HEAD
           <h2>欢迎来到九亿少女的梦</h2>
+=======
+          <h2>欢迎来到硅谷甄选</h2>
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
           <el-form-item prop="username">
             <el-input :prefix-icon="User" v-model="loginForm.username" placeholder="请输入用户名"></el-input>
           </el-form-item>

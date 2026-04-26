@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup lang="ts">
 import { getTime } from '@/utils/time'
 import useUserStore from '@/store/modules/user'
@@ -278,4 +279,18 @@ function initPieChart() {
     color: #409eff;
   }
 }
+=======
+<template>
+  <div>
+    <h1>我是一级路由-主页</h1>
+  </div>
+</template>
+
+<script setup lang="ts">
+
+</script>
+
+<style scoped lang="scss">
+  
+>>>>>>> 9ca8cbe3d1e8d4810f5e2552f8483f655e287972
 </style>
