@@ -95,6 +95,11 @@ pnpm fix
 pnpm format
 ```
 
+## 项目截图
+
+![首页](./src/assets/images/home.png)
+![数据大屏](./src/assets/images/screen.png)
+
 ## 学习要点
 
 本项目适合作为 Vue3 + TypeScript 学习实践项目，主要涵盖以下知识点：

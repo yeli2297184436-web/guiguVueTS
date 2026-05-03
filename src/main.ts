@@ -17,6 +17,8 @@ import pinia from './store'
 import './permisstion'
 //引入element-plus图标
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+//暗黑模式
+import 'element-plus/theme-chalk/dark/css-vars.css'
 
 const app = createApp(App)
 //element-plus图标
@@ -35,5 +37,6 @@ app.use(gloalComponent)
 //注册模板路由
 app.use(router)
 app.use(pinia)
+app.use(ElementPlus)
 
 app.mount('#app')
